@@ -109,3 +109,7 @@ Route::filter('auth', function()
 {
 	if (Auth::guest()) return Redirect::to('login');
 });
+
+// Route::controller(Controller::detect());
+Route::controller('user');
+Route::controller('member');
